@@ -2634,8 +2634,6 @@ Wire Wire Line
 	14650 3450 14700 3450
 Wire Wire Line
 	14650 3850 14700 3850
-Wire Wire Line
-	14650 4150 14700 4150
 $Comp
 L Connector:Conn_01x06_Male JConn1
 U 1 1 630CC93D
@@ -4402,4 +4400,8 @@ Wire Wire Line
 Connection ~ 11800 6350
 Wire Wire Line
 	11800 6350 11800 6400
+Text Notes 2100 5900 0    50   ~ 0
+Use 74AHCT14\n
+Text Notes 12100 1500 0    50   ~ 0
+Use 74AHCT14\n
 $EndSCHEMATC
