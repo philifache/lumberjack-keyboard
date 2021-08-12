@@ -648,7 +648,7 @@ U 1 1 5FD371D8
 P 11200 900
 F 0 "R100" V 11300 900 50  0000 C CNN
 F 1 "1.5k" V 11095 900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 11200 900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11200 900 50  0001 C CNN
 F 3 "~" H 11200 900 50  0001 C CNN
 	1    11200 900 
 	0    -1   -1   0   
@@ -2490,65 +2490,6 @@ Wire Wire Line
 	12750 5100 12750 5200
 Wire Wire Line
 	12750 5200 13050 5200
-Wire Wire Line
-	10950 7050 11000 7050
-Wire Wire Line
-	10950 7150 11000 7150
-Wire Wire Line
-	10950 7250 11000 7250
-Wire Wire Line
-	10950 7350 11000 7350
-Wire Wire Line
-	10950 7450 11000 7450
-Wire Wire Line
-	10950 7550 11000 7550
-$Comp
-L Connector:Conn_01x06_Male JBtn2
-U 1 1 6264F2DD
-P 10750 8000
-F 0 "JBtn2" H 10858 8381 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 10858 8290 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10750 8000 50  0001 C CNN
-F 3 "~" H 10750 8000 50  0001 C CNN
-	1    10750 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 7800 11000 7800
-Wire Wire Line
-	10950 7900 11000 7900
-Wire Wire Line
-	10950 8000 11000 8000
-Wire Wire Line
-	10950 8100 11000 8100
-Wire Wire Line
-	10950 8200 11000 8200
-Wire Wire Line
-	10950 8300 11000 8300
-Text Label 11000 7050 0    50   ~ 0
-BtnUp
-Text Label 11000 7150 0    50   ~ 0
-BtnDown
-Text Label 11000 7250 0    50   ~ 0
-BtnLeft
-Text Label 11000 7350 0    50   ~ 0
-BtnRight
-Text Label 11000 7450 0    50   ~ 0
-BtnStart
-Text Label 11000 7550 0    50   ~ 0
-BtnSelect
-Text Label 11000 7800 0    50   ~ 0
-BtnA
-Text Label 11000 7900 0    50   ~ 0
-BtnB
-Text Label 11000 8000 0    50   ~ 0
-BtnX
-Text Label 11000 8100 0    50   ~ 0
-BtnY
-Text Label 11000 8200 0    50   ~ 0
-BtnL
-Text Label 11000 8300 0    50   ~ 0
-RtnR
 Text Label 12250 5400 0    50   ~ 0
 BtnRightDebounced
 Text Label 12250 5500 0    50   ~ 0
@@ -2602,8 +2543,8 @@ L Device:R_Small R1
 U 1 1 62C78867
 P 1200 6300
 F 0 "R1" V 1100 6450 50  0000 C CNN
-F 1 "47k" V 1095 6300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 6300 50  0001 C CNN
+F 1 "46.4k" V 1100 6250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1200 6300 50  0001 C CNN
 F 3 "~" H 1200 6300 50  0001 C CNN
 	1    1200 6300
 	0    -1   -1   0   
@@ -2613,21 +2554,10 @@ L Device:R_Small R2
 U 1 1 62A57543
 P 1000 5950
 F 0 "R2" V 900 6100 50  0000 C CNN
-F 1 "47k" V 895 5950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1000 5950 50  0001 C CNN
+F 1 "205k" V 900 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1000 5950 50  0001 C CNN
 F 3 "~" H 1000 5950 50  0001 C CNN
 	1    1000 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Male JBtn1
-U 1 1 6263A824
-P 10750 7250
-F 0 "JBtn1" H 10858 7631 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 10858 7540 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10750 7250 50  0001 C CNN
-F 3 "~" H 10750 7250 50  0001 C CNN
-	1    10750 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3106,23 +3036,12 @@ F 3 "" H 1000 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D1
-U 1 1 64D940DB
-P 1250 6100
-F 0 "D1" H 1250 5883 50  0000 C CNN
-F 1 "1N4001" H 1250 5974 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1250 5925 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1250 6100 50  0001 C CNN
-	1    1250 6100
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C1
 U 1 1 64F697AC
 P 1450 6400
 F 0 "C1" H 1542 6446 50  0000 L CNN
 F 1 "0.1uF" H 1542 6355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1450 6400 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1450 6400 50  0001 C CNN
 F 3 "~" H 1450 6400 50  0001 C CNN
 	1    1450 6400
 	1    0    0    -1  
@@ -3169,7 +3088,7 @@ U 1 1 65236471
 P 10850 2150
 F 0 "C13" H 10942 2196 50  0000 L CNN
 F 1 "0.1uF" H 10942 2105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 10850 2150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10850 2150 50  0001 C CNN
 F 3 "~" H 10850 2150 50  0001 C CNN
 	1    10850 2150
 	1    0    0    -1  
@@ -3180,7 +3099,7 @@ U 1 1 6528B6FF
 P 12150 2150
 F 0 "C14" H 12242 2196 50  0000 L CNN
 F 1 "0.1uF" H 12242 2105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 12150 2150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 12150 2150 50  0001 C CNN
 F 3 "~" H 12150 2150 50  0001 C CNN
 	1    12150 2150
 	1    0    0    -1  
@@ -3191,7 +3110,7 @@ U 1 1 652A765E
 P 13500 2150
 F 0 "C15" H 13592 2196 50  0000 L CNN
 F 1 "0.1uF" H 13592 2105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 13500 2150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 13500 2150 50  0001 C CNN
 F 3 "~" H 13500 2150 50  0001 C CNN
 	1    13500 2150
 	1    0    0    -1  
@@ -3202,7 +3121,7 @@ U 1 1 652C337D
 P 14800 2150
 F 0 "C16" H 14892 2196 50  0000 L CNN
 F 1 "0.1uF" H 14892 2105 50  0000 L CNN
-F 2 "" H 14800 2150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 14800 2150 50  0001 C CNN
 F 3 "~" H 14800 2150 50  0001 C CNN
 	1    14800 2150
 	1    0    0    -1  
@@ -3284,8 +3203,8 @@ L Device:R_Small R3
 U 1 1 6565D0A9
 P 1200 7500
 F 0 "R3" V 1100 7650 50  0000 C CNN
-F 1 "47k" V 1095 7500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 7500 50  0001 C CNN
+F 1 "46.4k" V 1100 7450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1200 7500 50  0001 C CNN
 F 3 "~" H 1200 7500 50  0001 C CNN
 	1    1200 7500
 	0    -1   -1   0   
@@ -3295,8 +3214,8 @@ L Device:R_Small R4
 U 1 1 6565D0AF
 P 1000 7150
 F 0 "R4" V 900 7300 50  0000 C CNN
-F 1 "47k" V 895 7150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1000 7150 50  0001 C CNN
+F 1 "205k" V 900 7100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1000 7150 50  0001 C CNN
 F 3 "~" H 1000 7150 50  0001 C CNN
 	1    1000 7150
 	1    0    0    -1  
@@ -3313,23 +3232,12 @@ F 3 "" H 1000 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 6565D0BB
-P 1250 7300
-F 0 "D?" H 1250 7083 50  0000 C CNN
-F 1 "1N4001" H 1250 7174 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1250 7125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1250 7300 50  0001 C CNN
-	1    1250 7300
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C2
 U 1 1 6565D0C1
 P 1450 7600
 F 0 "C2" H 1542 7646 50  0000 L CNN
 F 1 "0.1uF" H 1542 7555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1450 7600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1450 7600 50  0001 C CNN
 F 3 "~" H 1450 7600 50  0001 C CNN
 	1    1450 7600
 	1    0    0    -1  
@@ -3375,8 +3283,8 @@ L Device:R_Small R5
 U 1 1 6572F86C
 P 1200 8750
 F 0 "R5" V 1100 8900 50  0000 C CNN
-F 1 "47k" V 1095 8750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 8750 50  0001 C CNN
+F 1 "46.4k" V 1100 8700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1200 8750 50  0001 C CNN
 F 3 "~" H 1200 8750 50  0001 C CNN
 	1    1200 8750
 	0    -1   -1   0   
@@ -3386,8 +3294,8 @@ L Device:R_Small R6
 U 1 1 6572F872
 P 1000 8400
 F 0 "R6" V 900 8550 50  0000 C CNN
-F 1 "47k" V 895 8400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1000 8400 50  0001 C CNN
+F 1 "205k" V 900 8350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1000 8400 50  0001 C CNN
 F 3 "~" H 1000 8400 50  0001 C CNN
 	1    1000 8400
 	1    0    0    -1  
@@ -3404,23 +3312,12 @@ F 3 "" H 1000 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 6572F87E
-P 1250 8550
-F 0 "D?" H 1250 8333 50  0000 C CNN
-F 1 "1N4001" H 1250 8424 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1250 8375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1250 8550 50  0001 C CNN
-	1    1250 8550
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C3
 U 1 1 6572F884
 P 1450 8850
 F 0 "C3" H 1542 8896 50  0000 L CNN
 F 1 "0.1uF" H 1542 8805 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1450 8850 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1450 8850 50  0001 C CNN
 F 3 "~" H 1450 8850 50  0001 C CNN
 	1    1450 8850
 	1    0    0    -1  
@@ -3466,8 +3363,8 @@ L Device:R_Small R9
 U 1 1 657AF60F
 P 3750 6300
 F 0 "R9" V 3650 6450 50  0000 C CNN
-F 1 "47k" V 3645 6300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3750 6300 50  0001 C CNN
+F 1 "46.4k" V 3650 6250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 6300 50  0001 C CNN
 F 3 "~" H 3750 6300 50  0001 C CNN
 	1    3750 6300
 	0    -1   -1   0   
@@ -3477,8 +3374,8 @@ L Device:R_Small R10
 U 1 1 657AF615
 P 3550 5950
 F 0 "R10" V 3450 6100 50  0000 C CNN
-F 1 "47k" V 3445 5950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3550 5950 50  0001 C CNN
+F 1 "205k" V 3450 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3550 5950 50  0001 C CNN
 F 3 "~" H 3550 5950 50  0001 C CNN
 	1    3550 5950
 	1    0    0    -1  
@@ -3495,23 +3392,12 @@ F 3 "" H 3550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 657AF621
-P 3800 6100
-F 0 "D?" H 3800 5883 50  0000 C CNN
-F 1 "1N4001" H 3800 5974 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 5925 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3800 6100 50  0001 C CNN
-	1    3800 6100
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C5
 U 1 1 657AF627
 P 4000 6400
 F 0 "C5" H 4092 6446 50  0000 L CNN
 F 1 "0.1uF" H 4092 6355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4000 6400 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4000 6400 50  0001 C CNN
 F 3 "~" H 4000 6400 50  0001 C CNN
 	1    4000 6400
 	1    0    0    -1  
@@ -3557,8 +3443,8 @@ L Device:R_Small R7
 U 1 1 65805051
 P 1200 10000
 F 0 "R7" V 1100 10150 50  0000 C CNN
-F 1 "47k" V 1095 10000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1200 10000 50  0001 C CNN
+F 1 "46.4k" V 1100 9950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1200 10000 50  0001 C CNN
 F 3 "~" H 1200 10000 50  0001 C CNN
 	1    1200 10000
 	0    -1   -1   0   
@@ -3568,8 +3454,8 @@ L Device:R_Small R8
 U 1 1 65805057
 P 1000 9650
 F 0 "R8" V 900 9800 50  0000 C CNN
-F 1 "47k" V 895 9650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1000 9650 50  0001 C CNN
+F 1 "205k" V 900 9600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1000 9650 50  0001 C CNN
 F 3 "~" H 1000 9650 50  0001 C CNN
 	1    1000 9650
 	1    0    0    -1  
@@ -3586,23 +3472,12 @@ F 3 "" H 1000 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 65805063
-P 1250 9800
-F 0 "D?" H 1250 9583 50  0000 C CNN
-F 1 "1N4001" H 1250 9674 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1250 9625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1250 9800 50  0001 C CNN
-	1    1250 9800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C4
 U 1 1 65805069
 P 1450 10100
 F 0 "C4" H 1542 10146 50  0000 L CNN
 F 1 "0.1uF" H 1542 10055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1450 10100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1450 10100 50  0001 C CNN
 F 3 "~" H 1450 10100 50  0001 C CNN
 	1    1450 10100
 	1    0    0    -1  
@@ -3648,8 +3523,8 @@ L Device:R_Small R11
 U 1 1 6589188F
 P 3750 7500
 F 0 "R11" V 3650 7650 50  0000 C CNN
-F 1 "47k" V 3645 7500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3750 7500 50  0001 C CNN
+F 1 "46.4k" V 3650 7450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 7500 50  0001 C CNN
 F 3 "~" H 3750 7500 50  0001 C CNN
 	1    3750 7500
 	0    -1   -1   0   
@@ -3659,8 +3534,8 @@ L Device:R_Small R12
 U 1 1 65891895
 P 3550 7150
 F 0 "R12" V 3450 7300 50  0000 C CNN
-F 1 "47k" V 3445 7150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3550 7150 50  0001 C CNN
+F 1 "205k" V 3450 7100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3550 7150 50  0001 C CNN
 F 3 "~" H 3550 7150 50  0001 C CNN
 	1    3550 7150
 	1    0    0    -1  
@@ -3677,23 +3552,12 @@ F 3 "" H 3550 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 658918A1
-P 3800 7300
-F 0 "D?" H 3800 7083 50  0000 C CNN
-F 1 "1N4001" H 3800 7174 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 7125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3800 7300 50  0001 C CNN
-	1    3800 7300
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C6
 U 1 1 658918A7
 P 4000 7600
 F 0 "C6" H 4092 7646 50  0000 L CNN
 F 1 "0.1uF" H 4092 7555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4000 7600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4000 7600 50  0001 C CNN
 F 3 "~" H 4000 7600 50  0001 C CNN
 	1    4000 7600
 	1    0    0    -1  
@@ -3739,8 +3603,8 @@ L Device:R_Small R13
 U 1 1 658C387B
 P 3750 8750
 F 0 "R13" V 3650 8900 50  0000 C CNN
-F 1 "47k" V 3645 8750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3750 8750 50  0001 C CNN
+F 1 "46.4k" V 3650 8700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 8750 50  0001 C CNN
 F 3 "~" H 3750 8750 50  0001 C CNN
 	1    3750 8750
 	0    -1   -1   0   
@@ -3750,8 +3614,8 @@ L Device:R_Small R14
 U 1 1 658C3881
 P 3550 8400
 F 0 "R14" V 3450 8550 50  0000 C CNN
-F 1 "47k" V 3445 8400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3550 8400 50  0001 C CNN
+F 1 "205k" V 3450 8350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3550 8400 50  0001 C CNN
 F 3 "~" H 3550 8400 50  0001 C CNN
 	1    3550 8400
 	1    0    0    -1  
@@ -3768,23 +3632,12 @@ F 3 "" H 3550 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 658C388D
-P 3800 8550
-F 0 "D?" H 3800 8333 50  0000 C CNN
-F 1 "1N4001" H 3800 8424 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 8375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3800 8550 50  0001 C CNN
-	1    3800 8550
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C7
 U 1 1 658C3893
 P 4000 8850
 F 0 "C7" H 4092 8896 50  0000 L CNN
 F 1 "0.1uF" H 4092 8805 50  0000 L CNN
-F 2 "" H 4000 8850 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4000 8850 50  0001 C CNN
 F 3 "~" H 4000 8850 50  0001 C CNN
 	1    4000 8850
 	1    0    0    -1  
@@ -3830,8 +3683,8 @@ L Device:R_Small R15
 U 1 1 658F93EE
 P 3750 10000
 F 0 "R15" V 3650 10150 50  0000 C CNN
-F 1 "47k" V 3645 10000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3750 10000 50  0001 C CNN
+F 1 "46.4k" V 3650 9950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 10000 50  0001 C CNN
 F 3 "~" H 3750 10000 50  0001 C CNN
 	1    3750 10000
 	0    -1   -1   0   
@@ -3841,8 +3694,8 @@ L Device:R_Small R16
 U 1 1 658F93F4
 P 3550 9650
 F 0 "R16" V 3450 9800 50  0000 C CNN
-F 1 "47k" V 3445 9650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3550 9650 50  0001 C CNN
+F 1 "205k" V 3450 9600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3550 9650 50  0001 C CNN
 F 3 "~" H 3550 9650 50  0001 C CNN
 	1    3550 9650
 	1    0    0    -1  
@@ -3859,23 +3712,12 @@ F 3 "" H 3550 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 658F9400
-P 3800 9800
-F 0 "D?" H 3800 9583 50  0000 C CNN
-F 1 "1N4001" H 3800 9674 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 9625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3800 9800 50  0001 C CNN
-	1    3800 9800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C8
 U 1 1 658F9406
 P 4000 10100
 F 0 "C8" H 4092 10146 50  0000 L CNN
 F 1 "0.1uF" H 4092 10055 50  0000 L CNN
-F 2 "" H 4000 10100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4000 10100 50  0001 C CNN
 F 3 "~" H 4000 10100 50  0001 C CNN
 	1    4000 10100
 	1    0    0    -1  
@@ -3921,8 +3763,8 @@ L Device:R_Small R17
 U 1 1 65A09213
 P 6200 6350
 F 0 "R17" V 6100 6500 50  0000 C CNN
-F 1 "47k" V 6095 6350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6200 6350 50  0001 C CNN
+F 1 "46.4k" V 6100 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 6350 50  0001 C CNN
 F 3 "~" H 6200 6350 50  0001 C CNN
 	1    6200 6350
 	0    -1   -1   0   
@@ -3932,8 +3774,8 @@ L Device:R_Small R18
 U 1 1 65A09219
 P 6000 6000
 F 0 "R18" V 5900 6150 50  0000 C CNN
-F 1 "47k" V 5895 6000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6000 6000 50  0001 C CNN
+F 1 "205k" V 5900 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6000 6000 50  0001 C CNN
 F 3 "~" H 6000 6000 50  0001 C CNN
 	1    6000 6000
 	1    0    0    -1  
@@ -3950,23 +3792,12 @@ F 3 "" H 6000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 65A09225
-P 6250 6150
-F 0 "D?" H 6250 5933 50  0000 C CNN
-F 1 "1N4001" H 6250 6024 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6250 5975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6250 6150 50  0001 C CNN
-	1    6250 6150
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C9
 U 1 1 65A0922B
 P 6450 6450
 F 0 "C9" H 6542 6496 50  0000 L CNN
 F 1 "0.1uF" H 6542 6405 50  0000 L CNN
-F 2 "" H 6450 6450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6450 6450 50  0001 C CNN
 F 3 "~" H 6450 6450 50  0001 C CNN
 	1    6450 6450
 	1    0    0    -1  
@@ -4012,8 +3843,8 @@ L Device:R_Small R19
 U 1 1 65A420AD
 P 6200 7550
 F 0 "R19" V 6100 7700 50  0000 C CNN
-F 1 "47k" V 6095 7550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6200 7550 50  0001 C CNN
+F 1 "46.4k" V 6100 7500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 7550 50  0001 C CNN
 F 3 "~" H 6200 7550 50  0001 C CNN
 	1    6200 7550
 	0    -1   -1   0   
@@ -4023,8 +3854,8 @@ L Device:R_Small R20
 U 1 1 65A420B3
 P 6000 7200
 F 0 "R20" V 5900 7350 50  0000 C CNN
-F 1 "47k" V 5895 7200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6000 7200 50  0001 C CNN
+F 1 "205k" V 5900 7150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6000 7200 50  0001 C CNN
 F 3 "~" H 6000 7200 50  0001 C CNN
 	1    6000 7200
 	1    0    0    -1  
@@ -4041,23 +3872,12 @@ F 3 "" H 6000 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 65A420BF
-P 6250 7350
-F 0 "D?" H 6250 7133 50  0000 C CNN
-F 1 "1N4001" H 6250 7224 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6250 7175 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6250 7350 50  0001 C CNN
-	1    6250 7350
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C10
 U 1 1 65A420C5
 P 6450 7650
 F 0 "C10" H 6542 7696 50  0000 L CNN
 F 1 "0.1uF" H 6542 7605 50  0000 L CNN
-F 2 "" H 6450 7650 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6450 7650 50  0001 C CNN
 F 3 "~" H 6450 7650 50  0001 C CNN
 	1    6450 7650
 	1    0    0    -1  
@@ -4103,8 +3923,8 @@ L Device:R_Small R21
 U 1 1 65A7DA43
 P 6200 8800
 F 0 "R21" V 6100 8950 50  0000 C CNN
-F 1 "47k" V 6095 8800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6200 8800 50  0001 C CNN
+F 1 "46.4k" V 6100 8750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 8800 50  0001 C CNN
 F 3 "~" H 6200 8800 50  0001 C CNN
 	1    6200 8800
 	0    -1   -1   0   
@@ -4114,8 +3934,8 @@ L Device:R_Small R22
 U 1 1 65A7DA49
 P 6000 8450
 F 0 "R22" V 5900 8600 50  0000 C CNN
-F 1 "47k" V 5895 8450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6000 8450 50  0001 C CNN
+F 1 "205k" V 5900 8400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6000 8450 50  0001 C CNN
 F 3 "~" H 6000 8450 50  0001 C CNN
 	1    6000 8450
 	1    0    0    -1  
@@ -4132,23 +3952,12 @@ F 3 "" H 6000 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 65A7DA55
-P 6250 8600
-F 0 "D?" H 6250 8383 50  0000 C CNN
-F 1 "1N4001" H 6250 8474 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6250 8425 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6250 8600 50  0001 C CNN
-	1    6250 8600
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C11
 U 1 1 65A7DA5B
 P 6450 8900
 F 0 "C11" H 6542 8946 50  0000 L CNN
 F 1 "0.1uF" H 6542 8855 50  0000 L CNN
-F 2 "" H 6450 8900 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6450 8900 50  0001 C CNN
 F 3 "~" H 6450 8900 50  0001 C CNN
 	1    6450 8900
 	1    0    0    -1  
@@ -4194,8 +4003,8 @@ L Device:R_Small R23
 U 1 1 65ABDF31
 P 6250 10000
 F 0 "R23" V 6150 10150 50  0000 C CNN
-F 1 "47k" V 6145 10000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6250 10000 50  0001 C CNN
+F 1 "46.4k" V 6150 9950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6250 10000 50  0001 C CNN
 F 3 "~" H 6250 10000 50  0001 C CNN
 	1    6250 10000
 	0    -1   -1   0   
@@ -4205,8 +4014,8 @@ L Device:R_Small R24
 U 1 1 65ABDF37
 P 6050 9650
 F 0 "R24" V 5950 9800 50  0000 C CNN
-F 1 "47k" V 5945 9650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6050 9650 50  0001 C CNN
+F 1 "205k" V 5950 9600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6050 9650 50  0001 C CNN
 F 3 "~" H 6050 9650 50  0001 C CNN
 	1    6050 9650
 	1    0    0    -1  
@@ -4223,23 +4032,12 @@ F 3 "" H 6050 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
-U 1 1 65ABDF43
-P 6300 9800
-F 0 "D?" H 6300 9583 50  0000 C CNN
-F 1 "1N4001" H 6300 9674 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6300 9625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6300 9800 50  0001 C CNN
-	1    6300 9800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C12
 U 1 1 65ABDF49
 P 6500 10100
 F 0 "C12" H 6592 10146 50  0000 L CNN
 F 1 "0.1uF" H 6592 10055 50  0000 L CNN
-F 2 "" H 6500 10100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6500 10100 50  0001 C CNN
 F 3 "~" H 6500 10100 50  0001 C CNN
 	1    6500 10100
 	1    0    0    -1  
@@ -4358,7 +4156,7 @@ U 1 1 66A17DEA
 P 14350 5500
 F 0 "C18" H 14442 5546 50  0000 L CNN
 F 1 "0.1uF" H 14442 5455 50  0000 L CNN
-F 2 "" H 14350 5500 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 14350 5500 50  0001 C CNN
 F 3 "~" H 14350 5500 50  0001 C CNN
 	1    14350 5500
 	1    0    0    -1  
@@ -4381,7 +4179,7 @@ U 1 1 66ACE1A1
 P 10600 5500
 F 0 "C17" H 10692 5546 50  0000 L CNN
 F 1 "0.1uF" H 10692 5455 50  0000 L CNN
-F 2 "" H 10600 5500 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10600 5500 50  0001 C CNN
 F 3 "~" H 10600 5500 50  0001 C CNN
 	1    10600 5500
 	1    0    0    -1  
@@ -4404,4 +4202,212 @@ Text Notes 2100 5900 0    50   ~ 0
 Use 74AHCT14\n
 Text Notes 12100 1500 0    50   ~ 0
 Use 74AHCT14\n
+Text Notes 8150 9250 0    50   ~ 0
+Condensor Discharge (Button pressed): \nR1 = -(time to discharge) / (C * ln(Vthreshold/Vinital))\nWhere: \ntime to discharge we want = 5ms\nC = 0.1uF\nVthreshold for going low = 1.7V\nVinitial = 5V\n\nR1 = 46.3 kOhms => Can buy a 1% 46.4kOhms\nGives a t=5.005ms
+Text Notes 8150 10200 0    50   ~ 0
+Condensor Charge (Button released): \nR1+R2 = -(time to charge) / (C * ln(1- (Vthreshold/Vfinal)))\nWhere: \nC = 0.1uF\nVthreshold = 0.9V\nVfinal= 5V\n\nR1+R2 = 251.9kOhms \nR2=205.5kOhms => Can buy a 1% 205kOhms
+$Comp
+L Diode:1N4148 D1
+U 1 1 66F51786
+P 1250 6100
+F 0 "D1" H 1250 5883 50  0000 C CNN
+F 1 "1N4148" H 1250 5974 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1250 5925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1250 6100 50  0001 C CNN
+	1    1250 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 66F9578D
+P 1250 7300
+F 0 "D2" H 1250 7083 50  0000 C CNN
+F 1 "1N4148" H 1250 7174 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1250 7125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1250 7300 50  0001 C CNN
+	1    1250 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 66FD4587
+P 1250 8550
+F 0 "D3" H 1250 8333 50  0000 C CNN
+F 1 "1N4148" H 1250 8424 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1250 8375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1250 8550 50  0001 C CNN
+	1    1250 8550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 670132B7
+P 1250 9800
+F 0 "D4" H 1250 9583 50  0000 C CNN
+F 1 "1N4148" H 1250 9674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1250 9625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1250 9800 50  0001 C CNN
+	1    1250 9800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D8
+U 1 1 6705201C
+P 3800 9800
+F 0 "D8" H 3800 9583 50  0000 C CNN
+F 1 "1N4148" H 3800 9674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3800 9625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3800 9800 50  0001 C CNN
+	1    3800 9800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 670911B4
+P 3800 8550
+F 0 "D7" H 3800 8333 50  0000 C CNN
+F 1 "1N4148" H 3800 8424 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3800 8375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3800 8550 50  0001 C CNN
+	1    3800 8550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 67248D41
+P 3800 7300
+F 0 "D6" H 3800 7083 50  0000 C CNN
+F 1 "1N4148" H 3800 7174 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3800 7125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3800 7300 50  0001 C CNN
+	1    3800 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D5
+U 1 1 67288563
+P 3800 6100
+F 0 "D5" H 3800 5883 50  0000 C CNN
+F 1 "1N4148" H 3800 5974 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3800 5925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3800 6100 50  0001 C CNN
+	1    3800 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D9
+U 1 1 672C7352
+P 6250 6150
+F 0 "D9" H 6250 5933 50  0000 C CNN
+F 1 "1N4148" H 6250 6024 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 5975 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6250 6150 50  0001 C CNN
+	1    6250 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D10
+U 1 1 673063B3
+P 6250 7350
+F 0 "D10" H 6250 7133 50  0000 C CNN
+F 1 "1N4148" H 6250 7224 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 7175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6250 7350 50  0001 C CNN
+	1    6250 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D11
+U 1 1 673454E4
+P 6250 8600
+F 0 "D11" H 6250 8383 50  0000 C CNN
+F 1 "1N4148" H 6250 8474 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 8425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6250 8600 50  0001 C CNN
+	1    6250 8600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D12
+U 1 1 673844DB
+P 6300 9800
+F 0 "D12" H 6300 9583 50  0000 C CNN
+F 1 "1N4148" H 6300 9674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6300 9625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6300 9800 50  0001 C CNN
+	1    6300 9800
+	-1   0    0    1   
+$EndComp
+Text Notes 8150 8300 0    50   ~ 0
+Reference: http://www.ganssle.com/debouncing-pt2.htm
+$Comp
+L Connector:Conn_01x06_Male JBtn1
+U 1 1 6263A824
+P 10750 7250
+F 0 "JBtn1" H 10858 7631 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 10858 7540 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10750 7250 50  0001 C CNN
+F 3 "~" H 10750 7250 50  0001 C CNN
+	1    10750 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 8300 11000 8300
+Wire Wire Line
+	10950 8200 11000 8200
+Wire Wire Line
+	10950 8100 11000 8100
+Wire Wire Line
+	10950 8000 11000 8000
+Wire Wire Line
+	10950 7900 11000 7900
+Wire Wire Line
+	10950 7800 11000 7800
+$Comp
+L Connector:Conn_01x06_Male JBtn2
+U 1 1 6264F2DD
+P 10750 8000
+F 0 "JBtn2" H 10858 8381 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 10858 8290 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10750 8000 50  0001 C CNN
+F 3 "~" H 10750 8000 50  0001 C CNN
+	1    10750 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 7550 11000 7550
+Wire Wire Line
+	10950 7450 11000 7450
+Wire Wire Line
+	10950 7350 11000 7350
+Wire Wire Line
+	10950 7250 11000 7250
+Wire Wire Line
+	10950 7150 11000 7150
+Wire Wire Line
+	10950 7050 11000 7050
+Text Label 11000 8300 0    50   ~ 0
+RtnR
+Text Label 11000 8200 0    50   ~ 0
+BtnL
+Text Label 11000 8100 0    50   ~ 0
+BtnY
+Text Label 11000 8000 0    50   ~ 0
+BtnX
+Text Label 11000 7900 0    50   ~ 0
+BtnB
+Text Label 11000 7800 0    50   ~ 0
+BtnA
+Text Label 11000 7550 0    50   ~ 0
+BtnSelect
+Text Label 11000 7450 0    50   ~ 0
+BtnStart
+Text Label 11000 7350 0    50   ~ 0
+BtnRight
+Text Label 11000 7250 0    50   ~ 0
+BtnLeft
+Text Label 11000 7150 0    50   ~ 0
+BtnDown
+Text Label 11000 7050 0    50   ~ 0
+BtnUp
 $EndSCHEMATC
