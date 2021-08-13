@@ -599,11 +599,11 @@ F 3 "" H 11650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R100
+L Device:R_Small R26
 U 1 1 5FD371D8
 P 11200 900
-F 0 "R100" V 11300 900 50  0000 C CNN
-F 1 "1.5k" V 11095 900 50  0000 C CNN
+F 0 "R26" V 11300 900 50  0000 C CNN
+F 1 "470" V 11095 900 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11200 900 50  0001 C CNN
 F 3 "~" H 11200 900 50  0001 C CNN
 	1    11200 900 
@@ -4141,7 +4141,7 @@ F 3 "~" H 10600 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 4650 11800 4650
+	10600 4650 11000 4650
 Wire Wire Line
 	10600 4650 10600 5400
 Connection ~ 11800 4650
@@ -4366,4 +4366,39 @@ Text Label 11000 7150 0    50   ~ 0
 BtnDown
 Text Label 11000 7050 0    50   ~ 0
 BtnUp
+$Comp
+L Device:R_Small R25
+U 1 1 6130412E
+P 11000 5150
+F 0 "R25" V 10900 5300 50  0000 C CNN
+F 1 "205k" V 10900 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11000 5150 50  0001 C CNN
+F 3 "~" H 11000 5150 50  0001 C CNN
+	1    11000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5050 11000 4650
+Connection ~ 11000 4650
+Wire Wire Line
+	11000 4650 11800 4650
+Wire Wire Line
+	11000 5250 11000 5400
+Wire Wire Line
+	11000 5700 11400 5700
+Wire Wire Line
+	11400 5600 11000 5600
+Connection ~ 11000 5600
+Wire Wire Line
+	11000 5600 11000 5700
+Wire Wire Line
+	11400 5500 11000 5500
+Connection ~ 11000 5500
+Wire Wire Line
+	11000 5500 11000 5600
+Wire Wire Line
+	11400 5400 11000 5400
+Connection ~ 11000 5400
+Wire Wire Line
+	11000 5400 11000 5500
 $EndSCHEMATC
