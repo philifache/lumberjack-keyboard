@@ -366,50 +366,6 @@ F 3 "" H 13450 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5C122533
-P 10150 600
-F 0 "H1" H 10250 646 50  0000 L CNN
-F 1 "M2" H 10250 555 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 10150 600 50  0001 C CNN
-F 3 "~" H 10150 600 50  0001 C CNN
-	1    10150 600 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5C12253A
-P 10150 800
-F 0 "H2" H 10250 846 50  0000 L CNN
-F 1 "M2" H 10250 755 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 10150 800 50  0001 C CNN
-F 3 "~" H 10150 800 50  0001 C CNN
-	1    10150 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5C122541
-P 10150 1000
-F 0 "H3" H 10250 1046 50  0000 L CNN
-F 1 "M2" H 10250 955 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 10150 1000 50  0001 C CNN
-F 3 "~" H 10150 1000 50  0001 C CNN
-	1    10150 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5C13CC58
-P 10150 1200
-F 0 "H4" H 10250 1246 50  0000 L CNN
-F 1 "M2" H 10250 1155 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 10150 1200 50  0001 C CNN
-F 3 "~" H 10150 1200 50  0001 C CNN
-	1    10150 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push MX5
 U 1 1 600C0271
 P 1000 3850
@@ -3023,7 +2979,7 @@ F 3 "" H 12850 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2950 6600 2    50   ~ 0
-BtnSelectDebounced
+BtnUpDebounced
 $Comp
 L power:+5V #PWR0170
 U 1 1 62D88D38
